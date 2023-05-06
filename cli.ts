@@ -1,5 +1,5 @@
 import { Command } from "./deps.ts";
-import { translate, TranslateParam } from "./mod.ts";
+import { translate, type TranslateParam } from "./mod.ts";
 
 const appName = "gtrans";
 const appVersion = "0.0.1";

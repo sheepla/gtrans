@@ -1,16 +1,10 @@
-import { Command } from "./deps.ts";
-
-const appName = "gtrans";
-const appVersion = "0.0.1";
-const appDescription = "A tiny command for Google Translate";
-
 const baseURL = "https://translate.googleapis.com";
 
-interface TranslateParam {
+type TranslateParam = {
   sourceLang: string;
   targetLang: string;
   text: string;
-}
+};
 
 function buildURL(param: TranslateParam): URL {
   const url = new URL(baseURL);
@@ -37,4 +31,4 @@ async function translate(param: TranslateParam): Promise<string> {
   return result as string;
 }
 
-export { translate, TranslateParam };
+export { translate, type TranslateParam };
