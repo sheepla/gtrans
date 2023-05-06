@@ -1,4 +1,6 @@
-# gtrans - A tiny command for Google Translate
+# gtrans
+
+*A tiny command for Google Translate powered by Deno*
 
 ## Usage
 
@@ -28,7 +30,7 @@ gtrans -s en -t ja "Hello, World!" # => こんにちは世界！
 ## Installation
 
 ```sh
-deno install --name gtrans --force "https://raw.githubusercontent.com/sheepla/gtrans/master/cli.ts"
+deno install --allow-net --name gtrans --force "https://raw.githubusercontent.com/sheepla/gtrans/master/cli.ts"
 ```
 
 ## License
